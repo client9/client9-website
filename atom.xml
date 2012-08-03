@@ -1,0 +1,38 @@
+---
+layout: nil
+sitename: client9 - Nick Galbreath
+siteurl: http://www.client9.com
+siteauthor: Nick Galbreath
+siteemail: nickg@client9.com
+---
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ page.sitename }}</title>
+  <link href="{{ page.siteurl }}/"/>
+  <link type="application/atom+xml" rel="self"
+        href="{{ page.siteurl }}/atom.xml"/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <id>{{ siteurl }}</id>
+  <author>
+    <name>{{ page.siteauthor }}</name>
+    <email>{{ page.siteemail }}</email>
+  </author>
+
+  {% for post in site.posts %}
+  {% if site.time > post.date %}
+  <entry>
+    <id>{{ page.siteurl }}{{ post.id }}</id>
+    <link type="text/html" rel="alternate"
+          href="{{ page.siteurl }}{{ post.url }}"/>
+    <title>{{ post.title }}</title>
+    <published>{{ post.date | date_to_xmlschema }}</published>
+    <updated>{{ post.date | date_to_xmlschema }}</updated>
+    <author>
+      <name>{{ page.siteauthor }}</name>
+      <uri>{{ page.siteurl }}/</uri>
+    </author>
+    <content type="html">{{ post.summary | xml_escape }}</content>
+  </entry>
+  {% endif %}
+  {% endfor %}
+</feed>
