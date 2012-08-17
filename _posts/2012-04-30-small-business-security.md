@@ -2,7 +2,7 @@
 layout: page
 tags: ["presentations"]
 title: "What You Can Learn From Small Companies about AppSec"
-summary: "From the SANS AppSec Panel, Las Vegas, NV on April 30, 2012.""
+summary: "From the SANS AppSec Panel, Las Vegas, NV on April 30, 2012."
 image: ""
 alias: "20120430"
 ---
