@@ -27,3 +27,8 @@ Subscribe to the mailing list or send me an email for a copy or early access.
 
 {{ 13595463 | slideshare }}
 
+---
+[Tweet from Mike Arpaia](https://twitter.com/mikearpaia/statuses/228995918475718656)
+
+![Mike Arpaia Tweet](/assets/defcon20-tweet.jpg "Title is optional")
+

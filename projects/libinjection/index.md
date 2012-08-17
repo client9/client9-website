@@ -1,4 +1,4 @@
-        ---
+---
 layout: page
 title: libinjection
 summary: "libinjection: a c library of high-speed detection of SQLi in user input"

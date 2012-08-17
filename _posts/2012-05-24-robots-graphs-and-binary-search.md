@@ -5,7 +5,8 @@ summary: "Post on Code as Craft on monitoring and detecting robotic traffic thro
 alias: "20120504"
 ---
 
-Over at Etsy's Code as Craft blog is a new article on detecting and
+Over at the [Code as Craft blog](http://codeascraft.etsy.com/) by
+[Etsy](http://www.etsy.com/) is a new article on detecting and
 monitoring robotic traffic and the use of a [IP categorization
 database](https://github.com/client9/ipcat).
 
