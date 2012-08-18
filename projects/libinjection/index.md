@@ -5,9 +5,8 @@ summary: "libinjection: a c library of high-speed detection of SQLi in user inpu
 alias: libinjection
 ---
 
-`libinjection` is a C library (and soon a python port) that detects
-SQLi attacks in user input.  It is designed to be embedded in existing
-or new applications:
+`libinjection` is a C library that detects SQLi attacks in user input.
+It is designed to be embedded in existing or new applications:
 
 * Fast > 100k inspections per second
 * No memory allocation
@@ -23,9 +22,6 @@ A python port is planned and ports to other languages should not be difficult.
 ## Source Code ##
 
 [https://github.com/client9/libinjection](https://github.com/client9/libinjection)
-
-Note that it currently depends on [stringencoders](stringencoders/)
-library.  We are working on removing this requirement.
 
 License: I'm temporarily using GPLv2 to force commericial interests to
 get in contact.  If this license is a problem, please get in contact.
