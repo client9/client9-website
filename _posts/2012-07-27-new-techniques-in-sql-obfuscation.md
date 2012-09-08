@@ -13,6 +13,21 @@ alias: "20120727"
 First presented [Friday July 27, 2012 at DEFCON 20, Las Vegas,
 NV.  At the RIO 4:20pm](http://defcon.org/html/defcon-20/dc-20-speakers.html#Galbreath)
 
+
+{{ 13595463 | slideshare }}
+---
+
+{{ "/assets/2012_defcon_t14" | videojs }}
+
+---
+[Tweet from Mike Arpaia](https://twitter.com/mikearpaia/statuses/228995918475718656)
+
+![Mike Arpaia Tweet](/assets/defcon20-tweet.jpg "Title is optional")
+
+---
+
+Original abstract:
+
 > SQLi remains a popular sport in the security arms-race. However, after
 > analysis of hundreds of thousands of real world SQLi attacks, output
 > from SQLi scanners, published reports, analysis of WAF source code,
@@ -23,15 +38,4 @@ NV.  At the RIO 4:20pm](http://defcon.org/html/defcon-20/dc-20-speakers.html#Gal
 > point the way for new directions in SQLi research for both offense and
 > defense.
 
-Subscribe to the mailing list or send me an email for a copy or early access.
-
-{{ 13595463 | slideshare }}
----
-
-{{ "/assets/2012_defcon_t14.mp4" | videojs }}
-
----
-[Tweet from Mike Arpaia](https://twitter.com/mikearpaia/statuses/228995918475718656)
-
-![Mike Arpaia Tweet](/assets/defcon20-tweet.jpg "Title is optional")
 

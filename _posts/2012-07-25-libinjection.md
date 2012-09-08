@@ -15,6 +15,16 @@ See the [libinjection](/projects/libinjection/) project page for more details.
 First presented [Wednesday July 25, 2012 at Black Hat USA, Las Vegas,
 NV.  Augustus I/II at 2:45pm](https://www.blackhat.com/html/bh-us-12/bh-us-12-briefings.html#Galbreath).
 
+{{ 13621872 | slideshare }}
+
+---
+
+{{ "/assets/2012_bhb_ul3" | videojs }}
+
+---
+
+Original Abstract
+
 > SQLi and other injection attacks remain the top OWASP and CERT
 > vulnerability. Current detection attempts frequently involve a myriad
 > of regular expressions which are not only brittle and error prone but
@@ -29,8 +39,6 @@ NV.  Augustus I/II at 2:45pm](https://www.blackhat.com/html/bh-us-12/bh-us-12-br
 > github for integration into applications, web application firewalls,
 > or porting to other programming languages.
 
-Subscribe to the mailing list or send me an email for a copy or early access.
-
 Nice shoutout from [Veracode's blog](http://www.veracode.com/blog/2012/07/veracode-research-at-blackhat-2012/) on what to see at Black Hat 2012:
 
 > “Libinjection: A C library for SQLi Detection and Generation Through
@@ -40,13 +48,5 @@ Nice shoutout from [Veracode's blog](http://www.veracode.com/blog/2012/07/veraco
 > tendency for people to publish a PoC and let it languish. The
 > description appears to be aimed straight at app developers, which is
 > great.”
-
-{{ 13621872 | slideshare }}
-
----
-
-{{ "/assets/2012_bhb_ul3.mp4" | videojs }}
-
---
 
 See the [libinjection](/projects/libinjection/) project page for more details.

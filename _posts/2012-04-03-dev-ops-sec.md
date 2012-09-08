@@ -9,6 +9,8 @@ alias: "20120403"
 
 {{ 12516606 | slideshare }}
 
-This talk starts around 4:30
+---
 
-{{ 21568549 | ustream }}
+{{ "/assets/20120403-devopsec" | videojs }}
+
+
