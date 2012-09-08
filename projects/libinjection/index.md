@@ -12,7 +12,7 @@ It is designed to be embedded in existing or new applications:
 * No memory allocation
 * No threads
 * Stable memory usage (approximately 500 bytes on stack)
-* 1000 lines of code (plus a few kiobytes of data)
+* 500 lines of C code (plus a few kiobytes of data)
 
 It is based on lexical analysis of SQL and SQLi attempts and does not
 use regular expressions.
@@ -24,13 +24,18 @@ A python port is planned and ports to other languages should not be difficult.
 [https://github.com/client9/libinjection](https://github.com/client9/libinjection)
 
 License: I'm temporarily using GPLv2 to force commericial interests to
-get in contact.  If this license is a problem, please get in contact.
+get in contact.  If this license is a problem, please let me know.
 The goal is to get this used, and not create a legal problem, and I'm
 happy to relicense.
 
 ### Presentations ###
 
+#### [libinjection: New Techniques for Detecting SQLi Attacks](/2012/09/06/libinjection-new-techniques-in-detecting-sqli-attacks/) ####
+
+First presented at [iSEC Partners](http://isecpartners.com/) Open Forum, at [Gilt Group](http://www.gilt.com/) headquarters in New York City on September 6, 2012
+
 #### [libinjection: a C library for SQLi detection and generation through lexical analysis of real world attacks](/2012/07/25/libinjection/) ####
+
 First presented at [Black Hat USA, July 25, 2012, 2:45 PM](https://www.blackhat.com/html/bh-us-12/bh-us-12-briefings.html#Galbreath)
 
 #### [New techniques in SQL Obfuscation: SQL never before used in SQLi](/2012/07/27/new-techniques-in-sql-obfuscation/) ###

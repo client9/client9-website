@@ -1,6 +1,6 @@
 ---
 layout: page
-tags: ["presentations"]
+tags: [ presentations ]
 title: "What You Can Learn From Small Companies about AppSec"
 summary: "From the SANS AppSec Panel, Las Vegas, NV on April 30, 2012."
 image: ""

@@ -13,6 +13,9 @@
 {% if page.og-image %}<meta property="og:image" content="http://www.client9.com{{ page.og-image }}" />{% endif %}
 <meta name="twitter:card" content="summary">
 <meta name="twitter:creator" content="@ngalbreath" />
+<!-- http://videojs.com/ -->
+<link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
+<script src="http://vjs.zencdn.net/c/video.js"></script>
 <style>
 body { color: #000;  font-family: proxima-nova, proxima-nova-1, proxima-nova-2, HelveticaNeue, 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
