@@ -43,4 +43,10 @@ Nice shoutout from [Veracode's blog](http://www.veracode.com/blog/2012/07/veraco
 
 {{ 13621872 | slideshare }}
 
+---
+
+{{ "/assets/2012_bhb_ul3.mp4" | videojs }}
+
+--
+
 See the [libinjection](/projects/libinjection/) project page for more details.

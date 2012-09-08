@@ -26,6 +26,9 @@ NV.  At the RIO 4:20pm](http://defcon.org/html/defcon-20/dc-20-speakers.html#Gal
 Subscribe to the mailing list or send me an email for a copy or early access.
 
 {{ 13595463 | slideshare }}
+---
+
+{{ "/assets/2012_defcon_t14.mp4" | videojs }}
 
 ---
 [Tweet from Mike Arpaia](https://twitter.com/mikearpaia/statuses/228995918475718656)
