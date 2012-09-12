@@ -44,13 +44,8 @@ blockquote { font-size: small; }
 #footer ul li {display: inline }
 #disqus_thread { margin:10px; padding: 10px}
 
-
 #header { margin: 0px; }
 #header h1 { float:left; font-size: 300%; margin: 0px }
-#header ul { float: left; margin: 0; padding: 0px}
-#header ul li { display: inline; float: left;
-  margin-left: 0px; margin-right: 5px; padding: 0px}
-
 #post a { text-transform: underline; color: #004276; }
 
 .readmore {text-transform: uppercase; font-size: x-small; font-family: arial; color: #004276; }

@@ -19,15 +19,20 @@ display-header: false
 <h3>News</h3>
 {% endif %}
 
-{% for post in paginator.posts %}
-{% if site.time > post.date %}
-<!-- Skip posts in the future -->
-<div class="post" style="margin-bottom: 15px">
+{% for post in paginator.posts %}{% if site.time > post.date %}
+<div class="post" style="margin-bottom: 15px; clear:both">
+<div>
 <span class="date">{{ post.date | date: "%Y-%m-%d" }}</span>
-<h3 style="margin-top: 0px; margin-bottom: 0px;"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+</div>
+<h3 style="margin-top: 0px; margin-bottom: 0px; clear:both"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+
+
 <div class="content">
+{% if post.og-image %}<img src="{{ post.og-image }}" width="100px" style="float:left; margin-top: 2px; margin-right: 5px"/>{% endif %}
+
 {{ post.summary }}
-<a class="readmore" href="{{ post.url }}">Read more&#187;</a>
+<a class="readmore" href="{{ post.url }}">Read&nbsp; more&#187;</a>
+<br style="clear:both"/>
 </div>
 </div>
 {% endif %}

@@ -3,7 +3,7 @@ layout: page
 tags: ["presentations"]
 title: "New Techniques in SQLi Obfuscation: SQL never before used in SQLi"
 summary: "After analysis of tens of thousands of real work SQLi attacks, both WAFs and attacks have missed a number of finer points of SQL.  This presentation was first given at DEFCON 20 in Las Vegas, NV"
-og-image: "http://www.client9.com/assets/sql-obfuscation-slides1.jpg"
+og-image: "/assets/2012_defcon_t14.jpg"
 conf-location: "Las Vegas, NV, USA"
 conf-name: "DEFCON 20"
 conf-date: "2012-07-27"

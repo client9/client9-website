@@ -3,7 +3,7 @@ layout: page
 tags: ["presentations"]
 title: "libinjection: a C library for SQLi detection and generation through lexical analysis of real world attacks."
 summary: "libinjection: a C library for SQLi detection and generation through lexical analysis of real world attacks.  First presented on July 25, 2012 at Black Hat USA, Las Vegas."
-og-image: "/assets/libinjection-slide1.jpg"
+og-image: "/assets/2012_bhb_ul3.jpg"
 conf-location: "Las Vegas, NV, USA"
 conf-name: "Black Hat USA"
 conf-date: "2012-07-25"
