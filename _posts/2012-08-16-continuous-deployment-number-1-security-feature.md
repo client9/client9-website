@@ -3,6 +3,7 @@ layout: page
 title: Continuous Deployment, The New &#35;1 Security Feature
 summary: "First presented at Security BSides Los Angeles on August 16, 2012 in Hermosa Beach"
 alias: "20120816"
+og-image: "/assets/20120816-continuousdeployment-card.jpg"
 tags: [ presentations ]
 ---
 
