@@ -3,6 +3,7 @@ layout: page
 title: libinjection, New Techniques in detecting SQLi Attacks
 summary: "First presented at iSEC Partners Open Forum at Gilt Group on September 6, 2012 in New York"
 alias: "20120906"
+op-image: "/assets/20120906-libinjection-card.jpg"
 tags: [ presentations ]
 ---
 
