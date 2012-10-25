@@ -30,6 +30,10 @@ happy to relicense.
 
 ### Presentations ###
 
+#### [libinjection and SQLi Obfuscation](/2012/09/20libinjection-and-sqli-obfuscation/) ####
+
+First presented at OWASP NYC at DTCC's headquarters at 55 Water Street in NYC on September 20, 2012.
+
 #### [libinjection: New Techniques for Detecting SQLi Attacks](/2012/09/06/libinjection-new-techniques-in-detecting-sqli-attacks/) ####
 
 First presented at [iSEC Partners](http://isecpartners.com/) Open Forum, at [Gilt Group](http://www.gilt.com/) headquarters in New York City on September 6, 2012
