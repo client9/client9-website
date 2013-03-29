@@ -1,4 +1,6 @@
 
+all: push
+
 build:
 
 push:
