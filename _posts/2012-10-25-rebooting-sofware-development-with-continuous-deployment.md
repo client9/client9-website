@@ -24,3 +24,8 @@ development. It's more than just "pushing code a lot", when done
 correctly it can be transformative to the organization. We'll discuss
 what continuous deployment is, how to get started, and what components
 are needed to make it successful, and secure.
+
+Just found that [Dinis Cruz](http://blog.diniscruz.com) wrote a nice
+piece on my talk: [Amazing presentation on integrating security into
+the SDL](http://blog.diniscruz.com/2012/10/amazing-presentation-on-integrating.html) and brings up some good points.  I hope address these in a future
+presentation.  Thanks Denis!
