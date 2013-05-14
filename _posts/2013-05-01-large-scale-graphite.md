@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Care and Feeding of Large Scale Graphite Installations
-summary: "First presented at DevOpsDays Austin, Texas, RSA on 2013-05-01"
+summary: "Tips and tricks using and scaling out graphite. First presented at DevOpsDays Austin, Texas, USA on 2013-05-01"
 alias: "20130501"
 og-image: "/assets/20130501-graphite-thumb.png"
 tags: [ presentations ]

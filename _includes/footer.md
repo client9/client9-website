@@ -1,7 +1,3 @@
-<div id="right">
-{% include mailchimp.md %}
-{% include twitter.md %}
-</div><!-- end right -->
 <div id="footer">
 <ul>
 <li><a href="/">client9</a></li>
