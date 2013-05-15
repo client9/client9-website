@@ -23,10 +23,7 @@ A python port is planned and ports to other languages should not be difficult.
 
 [https://github.com/client9/libinjection](https://github.com/client9/libinjection)
 
-License: I'm temporarily using GPLv2 to force commericial interests to
-get in contact.  If this license is a problem, please let me know.
-The goal is to get this used, and not create a legal problem, and I'm
-happy to relicense.
+License: BSD
 
 ### Presentations ###
 
