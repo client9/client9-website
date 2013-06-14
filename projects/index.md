@@ -8,5 +8,5 @@ This page under construction!
 
 ### [stringencoders](stringencoders/) ###
 
-### [libinjection](libinjection/) ###
+### [libinjection](https://libinjection.client9.com/) ###
 
