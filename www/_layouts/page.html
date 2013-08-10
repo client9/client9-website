@@ -1,0 +1,22 @@
+{% include header.md %}
+<div id="header">
+<h1><a href="/">client9</a></h1>
+<div style="float:left; margin-left: 15px; margin-top: 10px;">
+<span>Software Engineering by Nick Galbreath</span><br/>
+<a href="/about/">about</a>
+<a href="/archives/">archives</a>
+<a href="/books/cida/">books</a>
+<a href="/patents/">patents</a>
+<a href="/projects/">projects</a>
+</div>
+</div><!-- end header -->
+<div id="left" style="margin-top: 10px; clear:both">
+<span class="date">{{ page.date | date: "%Y-%m-%d" }}</span>
+{% if page.display-header != false %}
+<h2 style="margin-top:0px">{{ page.title }} </h2>
+{% endif %}
+<div id="post">
+{{ content }}
+</div>
+</div>
+{% include footer.md %}

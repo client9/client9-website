@@ -1,0 +1,87 @@
+---
+layout: default
+title: 'client9'
+display-header: false
+---
+
+{% if paginator.page == 1 %}
+<h3>Featured Projects</h3>
+<ul>
+<li><a href="https://libinjection.client9.com/">libinjection</a> advanced SQLi detection</li>
+<li><a href="/projects/stringencoders/">stringencoders</a> high speed string transformations in C</li>
+</ul>
+
+<div style="float:right; margin-bottom: 10px; margin-right:40px;">
+<a class="readmore" href="/projects/">more projects&#187;</a>
+</div>
+<hr style="clear:both"/>
+
+<h3>News</h3>
+{% endif %}
+
+{% for post in paginator.posts %}{% if site.time > post.date %}
+<div class="post" style="margin-bottom: 15px; clear:both">
+<div>
+<span class="date">{{ post.date | date: "%Y-%m-%d" }}</span>
+</div>
+<h3 style="margin-top: 0px; margin-bottom: 0px; clear:both"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+
+
+<div class="content">
+{% if post.og-image %}<img src="{{ post.og-image }}" width="100px" style="float:left; margin-top: 2px; margin-right: 5px"/>{% endif %}
+
+{{ post.summary }}
+<a class="readmore" href="{{ post.url }}">Read&nbsp; more&#187;</a>
+<br style="clear:both"/>
+</div>
+</div>
+{% endif %}
+{% endfor %}
+
+<div id="post-pagination" class="pagination">
+  {% if paginator.previous_page %}
+    {% if paginator.previous_page == 1 %}
+    <a class="previous" href="/">&#171;&#171;First</a>
+    <a class="previous" href="/">&#171;Newer</a>
+    {% else %}
+    <a class="previous" href="/">&#171;&#171;First</a>
+    <a class="previous" href="/page{{paginator.previous_page}}/">&#171;Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="previous disabled">&#171;&#171;First</span>
+    <span class="previous disabled">&#171;Newer</span>
+  {% endif %}
+
+<!--
+  <ul class="pages">
+    <li class="page">
+      {% if paginator.page == 1 %}
+      <span class="current-page">1</span>
+      {% else %}
+      <a href="/">1</a>
+      {% endif %}
+    </li>
+
+    {% for count in (2..paginator.total_pages) %}
+    <li class="page">
+      {% if count == paginator.page %}
+      <span class="current-page">{{count}}</span>
+      {% else %}
+      <a href="/page{{count}}">{{count}}</a>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+-->
+
+  {% if paginator.next_page %}
+    <a class="next" href="/page{{paginator.total_pages}}/">Last&#187;&#187;</a>
+    <a class="next" href="/page{{paginator.next_page}}/">Older&#187;</a>
+
+  {% else %}
+    <span class="next disabled">Last&#187;&#187;</span>
+    <span class="next disabled">Older&#187;</span>
+
+  {% endif %}
+
+</div>
