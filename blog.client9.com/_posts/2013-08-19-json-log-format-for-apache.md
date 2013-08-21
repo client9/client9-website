@@ -59,7 +59,7 @@ Apache HTTPD logging is handled by [mod\_log\_config](http://httpd.apache.org/do
 There are lots of examples of using `LogFormat` to generate a JSON-like log.  Here's one I used previously:
 
 ```
-LogFormat "{\"timestamp\":%{{%s}}t,\"remote_ip\":\"%a\",\"request\":\"%U%q\","
+LogFormat "{\"timestamp\":%{\%s}t,\"remote_ip\":\"%a\",\"request\":\"%U%q\","
           "\"method\":\"%m\",\"status\":%s,\"user_agent\":\"%{User-agent}i\","
           "\"referrer\":\"%{Referer}i\",\"duration_usec\":%D }" jsonlog
 
