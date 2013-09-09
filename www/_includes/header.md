@@ -1,9 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{{ page.title }}</title>
-<meta name="viewport" content="width=device-width" />
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 <link rel="icon" href="/favicon.ico" />
 <link rel="alternate" type="application/atom+xml" title="RSS Feed for client9.com"  href="/atom.xml" />
 <meta property="og:site_name" content="client9" />
