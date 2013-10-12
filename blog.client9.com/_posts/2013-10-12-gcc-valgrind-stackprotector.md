@@ -1,6 +1,6 @@
 ---
 layout: post
-title: GCC -fstackprotector and valgrind failure
+title: gcc -fstackprotector and valgrind failure
 ---
 
 I got a [report on a buffer overread](https://github.com/client9/libinjection/issues/56) (reading past static buffer boundry) in [libinjection](https://libinjection.client9.com/).  It's clear that it exists (around line 910):
@@ -21,7 +21,7 @@ $ gcc --version
 gcc (GCC) 4.7.2 20121109 (Red Hat 4.7.2-8)
 ```
 
-I tried writing unit tests for it, but I was unable to trigger a core dump (not surprising).  But it's very odd  that [valgrind](http://valgrind.org/) says everything is ok too.
+I tried [writing unit tests](https://github.com/client9/libinjection/blob/master/tests/test-tokens-words-022.txt) for it, but I was unable to trigger a core dump.  That's not surprising, but it's very odd  that [valgrind](http://valgrind.org/) says everything is ok too.
 
 I put an `assert` in the code.  Yes, definitely going past the boundry.  So why isn't valgrind catching this?  It's a static array!
 
