@@ -4,7 +4,7 @@ title: Polling, Mercurial, Basic Auth and Jenkins
 ---
 
 
-Here's the problem (well, five problems).
+Here's the problem (well, five problems):
 
 * You are using Jenkins for CI
 * You are using Mercurial for source control
@@ -14,8 +14,7 @@ Here's the problem (well, five problems).
 
 This is not changeable.
 
-Unfortunately, Jenkins doesn't work in this case.  You have to use an
-old style basic-auth URL, and it confuses Jenkins:
+Unfortunately, Jenkins doesn't work in this case.  You have to use an old style basic-auth URL, and it confuses Jenkins:
 
 ```
 ERROR: Workspace reports paths.default as https://auser@ahost/your/repo
@@ -29,58 +28,44 @@ The solution is:
 * [Create another user acccount and use the .hginit file](http://blog.siliconvalve.com/2012/03/03/configure-mercurial-pull-with-http-authentication-for-jenkins-on-windows/)
 * write your own polling function
 
-I picked option #3.  I'm certainly not an expert in Mercurial or
-Jenkins (and perhaps not Bash as you will see), but this appears to
-work.  Send me an email if you got a better solution!
+I picked option #3.  I'm certainly not an expert in Mercurial or Jenkins (and perhaps not Bash as you will see), but this appears to work.  Send me an email if you got a better solution!
 
 enjoy
 
 ```bash
 #!/bin/sh
 
+# http://blog.client9.com/2013/08/20/polling-mercurial-basic-auth-jenkins.html
 #
-# Usage:  hgpoll directory hg-url
+# Usage:  hgpoll hg-url
 #   return 0 is no changes
 #   return 1 if there is a change
 #
-# note: hg log -l 1 -b .
-#  is the last change on current branch
-#
 hgpoll() {
-    TARGET=$1
-    HGURL=$2
-
-    # linux uses md5sum, bsd/mac uses md5
-    MD5=`which md5sum || which md5`
+    HGURL=$1
 
     # adjust as needed
     CHECKSUM_FILE1="`pwd`/hglog-md5"
     CHECKSUM_FILE2="`pwd`/hglog-md5-new"
 
-    if [ ! -f "${CHECKSUM_FILE1}" ]; then
-        echo "first time" > ${CHECKSUM_FILE1}
+
+    if [ ! -f "${CHECKSUM_FILE}"]; then
+        echo "first time" > ${CHECKSUM_FILE}
     fi
 
-    if [ ! -d "${TARGET}" ]; then
-        hg clone ${HGURL} ${TARGET}
-        cd ${TARGET}
-        hg log -l 1 -b . | ${MD5} > ${CHECKSUM_FILE1}
-    else
-        cd ${TARGET}
-        hg pull ${HGURL} && hg update
-        hg log -l 1 -b . | ${MD5} > ${CHECKSUM_FILE2}
-        diff ${CHECKSUM_FILE1} ${CHECKSUM_FILE2}
-        if [ "$?" -eq 0 ]; then
-            # no difference
-            return 0
-        fi
-        cp ${CHECKSUM_FILE2} ${CHECKSUM_FILE1}
+    hg id -i -r tip ${HGURL} > ${CHECKSUM_FILE2}
+    diff ${CHECKSUM_FILE1} ${CHECKSUM_FILE2}
+    if [ "$?" -eq 0 ]; then
+        echo "no changes..."
+        # no difference
+        return 0
     fi
+    echo "found change!"
+    cp ${CHECKSUM_FILE2} ${CHECKSUM_FILE1}
     return 1
 }
 
-# NAME is a directory to checkout to
-hgpoll NAME https://USERNAME:PASSWORD@HOST/PATH/TO/REPO
+hgpoll https://USERNAME:PASSWORD@HOST/PATH/TO/REPO
 
 if [ "$?" -eq 0 ]; then
    exit 0
