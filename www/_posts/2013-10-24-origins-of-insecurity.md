@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Origins of Insecurity
-summary: "First presented at DevOpsDays, Tokyo Japan 2013-09-28"
+title: The Origins of Insecurity
+summary: "First presented at LASCON, Austin Texas on 2014-10-24"
 alias: "20131024"
-og-image: "/assets/20130928-make-ops-visible.png"
+og-image: "/assets/20131024-make-ops-visible.png"
 tags: [ presentations ]
 ---
 
