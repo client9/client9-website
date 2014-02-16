@@ -45,8 +45,8 @@ hgpoll() {
     HGURL=$1
 
     # adjust as needed
-    CHECKSUM_FILE1="`pwd`/hglog-md5"
-    CHECKSUM_FILE2="`pwd`/hglog-md5-new"
+    CHECKSUM_FILE1="`pwd`/hglog.txt"
+    CHECKSUM_FILE2="`pwd`/hglog.txt-new"
 
 
     if [ ! -f "${CHECKSUM_FILE}"]; then
